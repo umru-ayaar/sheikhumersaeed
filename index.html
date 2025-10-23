@@ -286,8 +286,14 @@
   </main>
 
   <footer>
-    <p>© 2025 Sheikh Umer Saeed — <a href="mailto:contact.umersaeed@gmail.com">contact.umersaeed@gmail.com</a></p>
+    <p>© <span id="year"></span> Sheikh Umer Saeed —
+      <a href="mailto:contact.umersaeed@gmail.com">contact.umersaeed@gmail.com</a>
+    </p>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </footer>
+
 </body>
 
 </html>
